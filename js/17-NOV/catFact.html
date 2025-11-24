@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Fact</title>
+</head>
+<body>
+    <p id="fact"></p>
+
+    <script>
+        const p = document.getElementById('fact');
+        let cnt = 1;
+
+        function getFact() {
+            try {
+                const xhr = new XMLHttpRequest();
+                xhr.open("GET", "https://catfact.ninja/fact");
+                xhr.onload = () => {
+                    p.innerText = `${cnt++} - ${JSON.parse(xhr.responseText).fact}`;
+                }
+                xhr.send();
+            } catch(error) {
+                console.log("something went wrong!");
+            }
+        }
+
+        // this will be executed only once on page load!
+        getFact();
+
+        // then concecutively after every 4 secs
+        setInterval(getFact, 4000);
+    </script>
+</body>
+</html>
