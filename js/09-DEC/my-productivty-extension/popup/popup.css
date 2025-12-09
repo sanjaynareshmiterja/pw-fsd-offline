@@ -1,0 +1,40 @@
+body {
+    width: 320px;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input {
+    padding: 6px;
+    margin: 4px 0;
+    width: 284px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 6px;
+    margin: 4px 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+section {
+    background: #222;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 5px;
+    margin-bottom: 6px;
+    background-color: #333;
+    border-radius: 5px;
+}

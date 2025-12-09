@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Dashboard</title>
+    <link rel="stylesheet" href="./popup.css">
+</head>
+<body>
+    <h2>Productivity Dashboard</h2>
+
+    <!-- pomodoro section -->
+    <section>
+        <h3>Pomodoro</h3>
+        <input type="text" value="25">
+        <button id="timer-start">Start</button>
+        <button id="timer-stop">Stop</button>
+        <p id="timer-display"></p>
+    </section>
+
+    <!-- blocked sites section -->
+    <section>
+        <h3>Block Sites</h3>
+        <input type="text" placeholder="e.g. intagram.com">
+        <button id="block-add-btn">Block</button>
+
+        <ul id="blocked-website-list"></ul>
+    </section>
+
+    <!-- usage stats section -->
+    <section>
+        <h3>Usage stats</h3>
+        <ul id="usage-list">
+            <li>google.com</li>
+            <li>facebook.com</li>
+        </ul>
+    </section>
+</body>
+</html>
