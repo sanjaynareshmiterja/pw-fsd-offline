@@ -13,7 +13,7 @@
     <!-- pomodoro section -->
     <section>
         <h3>Pomodoro</h3>
-        <input type="text" value="25">
+        <input type="text" value="25" id="pomodoro-time">
         <button id="timer-start">Start</button>
         <button id="timer-stop">Stop</button>
         <p id="timer-display"></p>
@@ -22,7 +22,7 @@
     <!-- blocked sites section -->
     <section>
         <h3>Block Sites</h3>
-        <input type="text" placeholder="e.g. intagram.com">
+        <input id="block-input" type="text" placeholder="e.g. intagram.com">
         <button id="block-add-btn">Block</button>
 
         <ul id="blocked-website-list"></ul>
@@ -36,5 +36,7 @@
             <li>facebook.com</li>
         </ul>
     </section>
+
+    <script src="./popup.js"></script>
 </body>
 </html>

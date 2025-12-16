@@ -1,0 +1,261 @@
+body {
+    width: 340px;
+    padding: 15px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #e8e8e8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+h3 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #a8d8ff;
+}
+
+input, button {
+    padding: 8px 12px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+input {
+    background: #2d3748;
+    color: white;
+    width: 100%;
+}
+
+input::placeholder {
+    color: #718096;
+}
+
+input:focus {
+    outline: 2px solid #4299e1;
+}
+
+button {
+    background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #3182ce 0%, #2b6cb0 100%);
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+section {
+    background: rgba(45, 55, 72, 0.7);
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+li {
+    margin-bottom: 6px;
+    background: rgba(74, 85, 104, 0.6);
+    padding: 8px 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+li button {
+    width: auto;
+    padding: 4px 10px;
+    background: #e53e3e;
+    font-size: 11px;
+    margin: 0;
+}
+
+li button:hover {
+    background: #c53030;
+}
+
+/* Feature 5: Screen Time Display */
+.screen-time-section {
+    background: linear-gradient(135deg, #2d3748 0%, #1a365d 100%);
+    text-align: center;
+}
+
+.total-time {
+    font-size: 28px;
+    font-weight: bold;
+    color: #68d391;
+    margin: 5px 0;
+    text-shadow: 0 0 10px rgba(104, 211, 145, 0.3);
+}
+
+/* Feature 4: Preset Buttons */
+.preset-buttons {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.preset {
+    flex: 1;
+    background: linear-gradient(135deg, #38a169 0%, #2f855a 100%);
+    padding: 10px;
+    font-weight: bold;
+}
+
+.preset:hover {
+    background: linear-gradient(135deg, #2f855a 0%, #276749 100%);
+}
+
+.pomodoro-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
+}
+
+.pomodoro-controls input {
+    text-align: center;
+}
+
+.stop-btn {
+    background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+}
+
+.stop-btn:hover {
+    background: linear-gradient(135deg, #c53030 0%, #9b2c2c 100%);
+}
+
+.timer-display {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fbd38d;
+    margin: 10px 0 5px 0;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+/* Feature 6: Toggle Switch */
+.toggle-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+.toggle-label input[type="checkbox"] {
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background: #4a5568;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 0;
+    padding: 0;
+}
+
+.toggle-label input[type="checkbox"]:checked {
+    background: #38a169;
+}
+
+.toggle-label input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+}
+
+.toggle-label input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+}
+
+.toggle-text {
+    font-size: 13px;
+    color: #a0aec0;
+}
+
+/* Feature 2: Block Current Site Button */
+.block-current-btn {
+    background: linear-gradient(135deg, #ed8936 0%, #dd6b20 100%);
+    margin-bottom: 8px;
+}
+
+.block-current-btn:hover {
+    background: linear-gradient(135deg, #dd6b20 0%, #c05621 100%);
+}
+
+.block-input-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 6px;
+}
+
+.block-input-row button {
+    width: auto;
+    padding: 8px 16px;
+}
+
+/* Feature 3: Clear Stats Button */
+.clear-btn {
+    background: linear-gradient(135deg, #718096 0%, #4a5568 100%);
+    margin-top: 8px;
+}
+
+.clear-btn:hover {
+    background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+}
+
+/* Scrollbar styling */
+ul::-webkit-scrollbar {
+    width: 6px;
+}
+
+ul::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background: #4a5568;
+    border-radius: 3px;
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+    background: #718096;
+}

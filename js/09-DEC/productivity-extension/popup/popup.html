@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Productivity Dashboard</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <h2>🎯 Productivity Dashboard</h2>
+
+    <!-- Feature 5: Today's Total Screen Time -->
+    <section class="screen-time-section">
+        <h3>📱 Today's Screen Time</h3>
+        <p id="total-time" class="total-time">Calculating...</p>
+    </section>
+
+    <!-- Pomodoro Section with Feature 4: Preset Buttons -->
+    <section>
+        <h3>🍅 Pomodoro Timer</h3>
+        <div class="preset-buttons">
+            <button class="preset" data-mins="5">5m</button>
+            <button class="preset" data-mins="15">15m</button>
+            <button class="preset" data-mins="25">25m</button>
+            <button class="preset" data-mins="45">45m</button>
+        </div>
+        <div class="pomodoro-controls">
+            <input id="pomodoro-min" type="number" value="25" placeholder="Custom mins">
+            <button id="pomodoro-start">▶ Start</button>
+            <button id="pomodoro-stop" class="stop-btn">⏹ Stop</button>
+        </div>
+        <p id="pomodoro-display" class="timer-display">Time Left: 0:00</p>
+    </section>
+
+    <!-- Block Sites Section with Feature 2: Quick Block Current Site -->
+    <section>
+        <h3>🚫 Block Sites</h3>
+        <!-- Feature 6: Pause All Blocking Toggle -->
+        <label class="toggle-label">
+            <input type="checkbox" id="blocking-toggle" checked>
+            <span class="toggle-text">Blocking Enabled</span>
+        </label>
+        
+        <!-- Feature 2: Quick Block Current Site -->
+        <button id="block-current" class="block-current-btn">🚫 Block Current Site</button>
+        
+        <div class="block-input-row">
+            <input id="block-input" placeholder="e.g. facebook.com">
+            <button id="block-add">+ Add</button>
+        </div>
+
+        <ul id="block-list"></ul>
+    </section>
+
+    <!-- Usage Stats Section with Feature 3: Clear Stats -->
+    <section>
+        <h3>📊 Usage Stats</h3>
+        <ul id="usage-list"></ul>
+        <!-- Feature 3: Clear Usage Stats -->
+        <button id="clear-stats" class="clear-btn">🗑️ Clear Stats</button>
+    </section>
+
+    <script src="popup.js"></script>
+</body>
+</html>
